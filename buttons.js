@@ -15,20 +15,20 @@
 
             // Фильтруем кнопки по категориям
             var onlineButtons = allButtons.filter(function () {
-                return $(this).attr('class').includes('online');
+                return $(this).attr('class').toLowerCase().includes('online');
             });
             var torrentButton = allButtons.filter('.view--torrent');
             var trailerButtons = allButtons.filter(function () {
-                return $(this).attr('class').includes('trailer');
+                return $(this).attr('class').toLowerCase().includes('trailer');
             });
             var bookButton = allButtons.filter('.button--book');
             var reactionButton = allButtons.filter('.button--reaction');
 
             // Оставшиеся кнопки (не online, не torrent, не trailer, не book, не reaction)
             var otherButtons = allButtons.filter(function () {
-                return !$(this).attr('class').includes('online') && 
+                return !$(this).attr('class').toLowerCase().includes('online') && 
                        !$(this).is(torrentButton) && 
-                       !$(this).attr('class').includes('trailer') && 
+                       !$(this).attr('class').toLowerCase().includes('trailer') && 
                        !$(this).is(bookButton) && 
                        !$(this).is(reactionButton);
             });
@@ -36,34 +36,34 @@
             // Формируем порядок кнопок
             var buttonOrder = [];
 
-            // Сначала все кнопки online
+            // 1. Все кнопки с "online"
             if (onlineButtons.length) {
                 onlineButtons.each(function () {
                     if ($(this).hasClass('lampac--button')) {
-                        $(this).find('svg').replaceWith(newLampacIcon); // Заменяем иконку только для lampac
+                        $(this).find('svg').replaceWith(newLampacIcon); // Замена иконки для lampac
                     }
                     buttonOrder.push($(this));
                 });
             }
 
-            // Затем torrent
+            // 2. Torrent
             if (torrentButton.length) buttonOrder.push(torrentButton);
 
-            // Затем все остальные кнопки (не online, не trailer)
+            // 3. Все остальные кнопки (не online, не trailer)
             if (otherButtons.length) {
                 otherButtons.each(function () {
                     buttonOrder.push($(this));
                 });
             }
 
-            // Затем все кнопки trailer
+            // 4. Все кнопки с "trailer"
             if (trailerButtons.length) {
                 trailerButtons.each(function () {
                     buttonOrder.push($(this));
                 });
             }
 
-            // В конце book и reaction
+            // 5. Book и Reaction в конце
             if (bookButton.length) buttonOrder.push(bookButton);
             if (reactionButton.length) buttonOrder.push(reactionButton);
 
