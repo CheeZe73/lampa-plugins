@@ -40,18 +40,16 @@
             // Формируем порядок кнопок
             var buttonOrder = [];
 
-            // 1. Все кнопки с "online"
+            // 1. Все кнопки с "online" (заменяем иконку для всех)
             onlineButtons.each(function () {
-                if ($(this).hasClass('lampac--button')) {
-                    $(this).find('svg').replaceWith(newLampacIcon); // Замена иконки для lampac
-                }
+                $(this).find('svg').replaceWith(newLampacIcon); // Замена иконки для всех "online"
                 buttonOrder.push($(this));
             });
 
             // 2. Torrent
             if (torrentButton.length) buttonOrder.push(torrentButton);
 
-            // 3. Все кнопки с "trailer"
+            // 3. Все кнопки с "trailer" (сохраняем порядок появления)
             trailerButtons.each(function () {
                 buttonOrder.push($(this));
             });
