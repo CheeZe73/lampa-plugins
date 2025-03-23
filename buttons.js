@@ -1,1 +1,55 @@
-(function(_0x1a2b3c,_0x5e4d1f){var _0x3f2a1d=_0x4bed,_0x2c1e5b=_0x1a2b3c();while(!![]){try{var _0x4d5e2a=parseInt(_0x3f2a1d(0x101))/(0x1*0x123+-0x45*0x2+-0x94)*(parseInt(_0x3f2a1d(0x102))/(0x2*0x34+-0x1*0x56+0x10))+-parseInt(_0x3f2a1d(0x103))/(-0x1*0x89+0x45+0x47)+parseInt(_0x3f2a1d(0x104))/(-0x1*0x23+0x56+-0x2f);if(_0x4d5e2a===_0x5e4d1f)break;else _0x2c1e5b['push'](_0x2c1e5b['shift']());}catch(_0x3e1f2b){_0x2c1e5b['push'](_0x2c1e5b['shift']());}}}(_0x342a,0x12345),(function(){'use strict';var _0x1b3c4d=_0x4bed,_0x5a2e3f={'abcde':_0x1b3c4d(0x201)+_0x1b3c4d(0x202)+_0x1b3c4d(0x203),'fghij':function(_0x2a3b4c,_0x4d5e1f){return _0x2a3b4c(_0x4d5e1f);},'klmno':function(_0x3c4d5e){return _0x3c4d5e();},'pqrst':_0x1b3c4d(0x204),'uvwxy':_0x1b3c4d(0x205),'zabcd':_0x1b3c4d(0x206),'efghi':_0x1b3c4d(0x207),'jklmn':_0x1b3c4d(0x208),'opqrs':_0x1b3c4d(0x209),'tuvwx':function(_0x1f2e3d,_0x5b4c3a){return _0x1f2e3d===_0x5b4c3a;},'yzabc':function(_0x4e3d2c,_0x2b1f4e){return _0x4e3d2c(_0x2b1f4e);}};var _0x3d4e5f=_0x5a2e3f['abcde'];_0x5a2e3f['fghij'](_0x1b3c4d(0x210),function(_0x2e1f3c){if(_0x5a2e3f['tuvwx'](_0x2e1f3c[_0x1b3c4d(0x211)],_0x5a2e3f['pqrst'])){var _0x4c5d3e=_0x5a2e3f['yzabc'](_0x2e1f3c[_0x1b3c4d(0x212)][_0x1b3c4d(0x213)],[]),_0x1e2f4d=_0x4c5d3e[_0x1b3c4d(0x214)](_0x5a2e3f['uvwxy']);_0x4c5d3e[_0x1b3c4d(0x214)](_0x5a2e3f['zabcd'])[_0x1b3c4d(0x215)]();var _0x3f2e1d=_0x4c5d3e[_0x1b3c4d(0x214)](_0x5a2e3f['efghi'])[_0x1b3c4d(0x216)](_0x1e2f4d[_0x1b3c4d(0x214)](_0x5a2e3f['jklmn'])),_0x5e3d2f=_0x3f2e1d[_0x1b3c4d(0x217)](_0x5a2e3f['opqrs']),_0x2d1f4e=_0x3f2e1d[_0x1b3c4d(0x217)](_0x1b3c4d(0x218)),_0x4b3e2d=_0x3f2e1d[_0x1b3c4d(0x217)](_0x1b3c4d(0x219)),_0x1c2d3f=_0x3f2e1d[_0x1b3c4d(0x217)](_0x1b3c4d(0x220)),_0x3e2f1d=_0x3f2e1d[_0x1b3c4d(0x217)](_0x1b3c4d(0x221)),_0x5d4e3f=_0x3f2e1d[_0x1b3c4d(0x217)](_0x1b3c4d(0x222)),_0x2b1e4f=[];if(_0x5e3d2f[_0x1b3c4d(0x223)]){_0x5e3d2f[_0x1b3c4d(0x214)](_0x1b3c4d(0x224))[_0x1b3c4d(0x225)](_0x3d4e5f);_0x2b1e4f[_0x1b3c4d(0x226)](_0x5e3d2f);}if(_0x2d1f4e[_0x1b3c4d(0x223)])_0x2b1e4f[_0x1b3c4d(0x226)](_0x2d1f4e);if(_0x4b3e2d[_0x1b3c4d(0x223)])_0x2b1e4f[_0x1b3c4d(0x226)](_0x4b3e2d);if(_0x1c2d3f[_0x1b3c4d(0x223)])_0x2b1e4f[_0x1b3c4d(0x226)](_0x1c2d3f);_0x3f2e1d[_0x1b3c4d(0x217)](function(){return !_0x5a2e3f['yzabc']($,this)[_0x1b3c4d(0x227)](_0x5e3d2f)&&!_0x5a2e3f['yzabc']($,this)[_0x1b3c4d(0x227)](_0x2d1f4e)&&!_0x5a2e3f['yzabc']($,this)[_0x1b3c4d(0x227)](_0x4b3e2d)&&!_0x5a2e3f['yzabc']($,this)[_0x1b3c4d(0x227)](_0x1c2d3f)&&!_0x5a2e3f['yzabc']($,this)[_0x1b3c4d(0x227)](_0x3e2f1d)&&!_0x5a2e3f['yzabc']($,this)[_0x1b3c4d(0x227)](_0x5d4e3f);})[_0x1b3c4d(0x228)](function(){_0x2b1e4f[_0x1b3c4d(0x226)](_0x5a2e3f['yzabc']($,this));});_0x2b1e4f[_0x1b3c4d(0x226)](_0x3e2f1d);_0x2b1e4f[_0x1b3c4d(0x226)](_0x5d4e3f);_0x1e2f4d[_0x1b3c4d(0x229)]();_0x2b1e4f[_0x1b3c4d(0x22a)](function(_0x3c4e1f){_0x1e2f4d[_0x1b3c4d(0x22b)](_0x3c4e1f);});}});if(_0x5a2e3f['tuvwx'](typeof _0x1b3c4d(0x230),_0x1b3c4d(0x231))&&_0x1b3c4d(0x232)[_0x1b3c4d(0x233)]){_0x1b3c4d(0x232)[_0x1b3c4d(0x233)]={};}}));function _0x342a(){return['dummy'];}function _0x4bed(_0xidx){var _0xstrings={0x101:'123',0x102:'456',0x103:'789',0x104:'101112',0x201:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M20.331 14.644l-13.794-13.831 17.55 10.075zM2.938 0c-0.813 0.425-1.356 1.2-1.356 2.206v27.581c0 1.006 0.544 1.781 1.356 2.206l16.038-16zM29.512 14.1l-3.681-2.131-4.106 4.031 4.106 4.031 3.756-2.131c1.125-0.893 1.125-2.906-0.075-3.8zM6.538 31.188l17.55-10.075-3.756-3.756z" fill="currentColor"></path>',0x202:'</svg>',0x203:'',0x204:'complite',0x205:'.full-start-new__buttons',0x206:'.button--play',0x207:'.full-start__button',0x208:'.buttons--container .full-start__button',0x209:'.view--online.lampac--button',0x210:'Lampa.Listener.follow',0x211:'type',0x212:'object',0x213:'activity.render',0x214:'find',0x215:'remove',0x216:'add',0x217:'filter',0x218:'.view--torrent',0x219:'.view--rutube_trailer',0x220:'.view--trailer',0x221:'.button--book',0x222:'.button--reaction',0x223:'length',0x224:'svg',0x225:'replaceWith',0x226:'push',0x227:'is',0x228:'each',0x229:'empty',0x22a:'forEach',0x22b:'append',0x230:'module',0x231:'undefined',0x232:'module',0x233:'exports'};return _0xstrings[_0xidx]||'';}
+(function () {
+    'use strict';
+
+    var newLampacIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M20.331 14.644l-13.794-13.831 17.55 10.075zM2.938 0c-0.813 0.425-1.356 1.2-1.356 2.206v27.581c0 1.006 0.544 1.781 1.356 2.206l16.038-16zM29.512 14.1l-3.681-2.131-4.106 4.031 4.106 4.031 3.756-2.131c1.125-0.893 1.125-2.906-0.075-3.8zM6.538 31.188l17.55-10.075-3.756-3.756z" fill="currentColor"></path></svg>';
+
+    Lampa.Listener.follow('full', function (e) {
+        if (e.type === 'complite') {
+            var fullContainer = e.object.activity.render();
+            var targetContainer = fullContainer.find('.full-start-new__buttons');
+
+            fullContainer.find('.button--play').remove();
+
+            var allButtons = fullContainer.find('.buttons--container .full-start__button').add(targetContainer.find('.full-start__button'));
+
+            var onlineButton = allButtons.filter('.view--online.lampac--button');
+            var torrentButton = allButtons.filter('.view--torrent');
+            var rutubeButton = allButtons.filter('.view--rutube_trailer');
+            var trailerButton = allButtons.filter('.view--trailer');
+            var bookButton = allButtons.filter('.button--book');
+            var reactionButton = allButtons.filter('.button--reaction');
+
+            var buttonOrder = [];
+            if (onlineButton.length) {
+                onlineButton.find('svg').replaceWith(newLampacIcon);
+                buttonOrder.push(onlineButton);
+            }
+            if (torrentButton.length) buttonOrder.push(torrentButton);
+            if (rutubeButton.length) buttonOrder.push(rutubeButton);
+            if (trailerButton.length) buttonOrder.push(trailerButton);
+
+            allButtons.filter(function () {
+                return !$(this).is(onlineButton) && 
+                       !$(this).is(torrentButton) && 
+                       !$(this).is(rutubeButton) && 
+                       !$(this).is(trailerButton) && 
+                       !$(this).is(bookButton) && 
+                       !$(this).is(reactionButton);
+            }).each(function () {
+                buttonOrder.push($(this));
+            });
+
+            buttonOrder.push(bookButton);
+            buttonOrder.push(reactionButton);
+
+            targetContainer.empty();
+            buttonOrder.forEach(function ($button) {
+                targetContainer.append($button);
+            });
+        }
+    });
+
+    if (typeof module !== 'undefined' && module.exports) {
+        module.exports = {};
+    }
+})();
