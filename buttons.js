@@ -10,8 +10,10 @@
 
             fullContainer.find('.button--play').remove();
 
-            // Собираем все кнопки и убираем дубликаты
-            var allButtons = fullContainer.find('.buttons--container .full-start__button').add(targetContainer.find('.full-start__button')).unique();
+            // Собираем все кнопки из обоих контейнеров и убираем дубликаты
+            var buttonsFromContainer = fullContainer.find('.buttons--container .full-start__button');
+            var buttonsFromTarget = targetContainer.find('.full-start__button');
+            var allButtons = buttonsFromContainer.add(buttonsFromTarget.not(buttonsFromContainer));
 
             // Фильтруем кнопки по категориям
             var onlineButtons = allButtons.filter(function () {
