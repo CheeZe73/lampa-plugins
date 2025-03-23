@@ -10,8 +10,8 @@
 
             fullContainer.find('.button--play').remove();
 
-            // Собираем все кнопки
-            var allButtons = fullContainer.find('.buttons--container .full-start__button').add(targetContainer.find('.full-start__button'));
+            // Собираем все кнопки и убираем дубликаты
+            var allButtons = fullContainer.find('.buttons--container .full-start__button').add(targetContainer.find('.full-start__button')).unique();
 
             // Фильтруем кнопки по категориям
             var onlineButtons = allButtons.filter(function () {
@@ -21,14 +21,16 @@
             var trailerButtons = allButtons.filter(function () {
                 return $(this).attr('class').toLowerCase().includes('trailer');
             });
+            var subscribeButton = allButtons.filter('.button--subscribe');
             var bookButton = allButtons.filter('.button--book');
             var reactionButton = allButtons.filter('.button--reaction');
 
-            // Оставшиеся кнопки (не online, не torrent, не trailer, не book, не reaction)
+            // Оставшиеся кнопки (не online, не torrent, не trailer, не subscribe, не book, не reaction)
             var otherButtons = allButtons.filter(function () {
                 return !$(this).attr('class').toLowerCase().includes('online') && 
                        !$(this).is(torrentButton) && 
                        !$(this).attr('class').toLowerCase().includes('trailer') && 
+                       !$(this).is(subscribeButton) && 
                        !$(this).is(bookButton) && 
                        !$(this).is(reactionButton);
             });
@@ -37,34 +39,33 @@
             var buttonOrder = [];
 
             // 1. Все кнопки с "online"
-            if (onlineButtons.length) {
-                onlineButtons.each(function () {
-                    if ($(this).hasClass('lampac--button')) {
-                        $(this).find('svg').replaceWith(newLampacIcon); // Замена иконки для lampac
-                    }
-                    buttonOrder.push($(this));
-                });
-            }
+            onlineButtons.each(function () {
+                if ($(this).hasClass('lampac--button')) {
+                    $(this).find('svg').replaceWith(newLampacIcon); // Замена иконки для lampac
+                }
+                buttonOrder.push($(this));
+            });
 
             // 2. Torrent
             if (torrentButton.length) buttonOrder.push(torrentButton);
 
-            // 3. Все остальные кнопки (не online, не trailer)
-            if (otherButtons.length) {
-                otherButtons.each(function () {
-                    buttonOrder.push($(this));
-                });
-            }
+            // 3. Все остальные кнопки (не online, не trailer, не subscribe)
+            otherButtons.each(function () {
+                buttonOrder.push($(this));
+            });
 
-            // 4. Все кнопки с "trailer"
-            if (trailerButtons.length) {
-                trailerButtons.each(function () {
-                    buttonOrder.push($(this));
-                });
-            }
+            // 4. Subscribe
+            if (subscribeButton.length) buttonOrder.push(subscribeButton);
 
-            // 5. Book и Reaction в конце
+            // 5. Все кнопки с "trailer"
+            trailerButtons.each(function () {
+                buttonOrder.push($(this));
+            });
+
+            // 6. Book
             if (bookButton.length) buttonOrder.push(bookButton);
+
+            // 7. Reaction
             if (reactionButton.length) buttonOrder.push(reactionButton);
 
             // Очищаем контейнер и добавляем кнопки в новом порядке
