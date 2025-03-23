@@ -49,18 +49,18 @@
             // 2. Torrent
             if (torrentButton.length) buttonOrder.push(torrentButton);
 
-            // 3. Все остальные кнопки (не online, не trailer, не subscribe)
+            // 3. Все кнопки с "trailer"
+            trailerButtons.each(function () {
+                buttonOrder.push($(this));
+            });
+
+            // 4. Все остальные кнопки (не online, не trailer, не subscribe)
             otherButtons.each(function () {
                 buttonOrder.push($(this));
             });
 
-            // 4. Subscribe
+            // 5. Subscribe
             if (subscribeButton.length) buttonOrder.push(subscribeButton);
-
-            // 5. Все кнопки с "trailer"
-            trailerButtons.each(function () {
-                buttonOrder.push($(this));
-            });
 
             // 6. Book
             if (bookButton.length) buttonOrder.push(bookButton);
