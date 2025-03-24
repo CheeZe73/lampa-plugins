@@ -17,8 +17,12 @@
                 var bookButton = allButtons.filter('.button--book');
                 var reactionButton = allButtons.filter('.button--reaction');
 
-                // Заменяем иконку у lampac online кнопки
-                allButtons.filter('.view--online.lampac--button').find('svg').replaceWith(newLampacIcon);
+                // Заменяем иконку у ВСЕХ online кнопок
+                allButtons.filter(function () {
+                    return $(this).attr('class').includes('online');
+                }).each(function () {
+                    $(this).find('svg').replaceWith(newLampacIcon);
+                });
 
                 // Группировка по приоритету
                 var onlineButtons = allButtons.filter(function () {
@@ -66,4 +70,3 @@
         module.exports = {};
     }
 })();
-
