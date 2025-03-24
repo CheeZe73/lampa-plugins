@@ -14,42 +14,48 @@
                 var allButtons = fullContainer.find('.buttons--container .full-start__button')
                     .add(targetContainer.find('.full-start__button'));
 
-                var onlineButton = allButtons.filter('.view--online.lampac--button');
-                var torrentButton = allButtons.filter('.view--torrent');
-                var rutubeButton = allButtons.filter('.view--rutube_trailer');
-                var trailerButton = allButtons.filter('.view--trailer');
                 var bookButton = allButtons.filter('.button--book');
                 var reactionButton = allButtons.filter('.button--reaction');
 
-                var buttonOrder = [];
-                if (onlineButton.length) {
-                    onlineButton.find('svg').replaceWith(newLampacIcon);
-                    buttonOrder.push(onlineButton);
-                }
-                if (torrentButton.length) buttonOrder.push(torrentButton);
-                if (rutubeButton.length) buttonOrder.push(rutubeButton);
-                if (trailerButton.length) buttonOrder.push(trailerButton);
+                // Заменяем иконку у lampac online кнопки
+                allButtons.filter('.view--online.lampac--button').find('svg').replaceWith(newLampacIcon);
 
-                allButtons.filter(function () {
-                    return !$(this).is(onlineButton) &&
-                           !$(this).is(torrentButton) &&
-                           !$(this).is(rutubeButton) &&
-                           !$(this).is(trailerButton) &&
+                // Группировка по приоритету
+                var onlineButtons = allButtons.filter(function () {
+                    return $(this).attr('class').includes('online');
+                });
+
+                var torrentButtons = allButtons.filter(function () {
+                    return $(this).attr('class').includes('torrent');
+                });
+
+                var trailerButtons = allButtons.filter(function () {
+                    return $(this).attr('class').includes('trailer');
+                });
+
+                var otherButtons = allButtons.filter(function () {
+                    return !$(this).attr('class').includes('online') &&
+                           !$(this).attr('class').includes('torrent') &&
+                           !$(this).attr('class').includes('trailer') &&
                            !$(this).is(bookButton) &&
                            !$(this).is(reactionButton);
-                }).each(function () {
-                    buttonOrder.push($(this));
                 });
 
-                buttonOrder.push(bookButton);
-                buttonOrder.push(reactionButton);
+                // Собираем кнопки в нужном порядке
+                var buttonOrder = [];
+                buttonOrder = buttonOrder.concat(onlineButtons.get());
+                buttonOrder = buttonOrder.concat(torrentButtons.get());
+                buttonOrder = buttonOrder.concat(trailerButtons.get());
+                buttonOrder = buttonOrder.concat(otherButtons.get());
+                buttonOrder.push(bookButton.get(0));
+                buttonOrder.push(reactionButton.get(0));
 
                 targetContainer.empty();
-                buttonOrder.forEach(function ($button) {
-                    targetContainer.append($button);
+                buttonOrder.forEach(function (button) {
+                    if (button) targetContainer.append(button);
                 });
 
-                // Включаем "full_start" после выполнения
+                // Включаем "full_start" после перестройки
                 Lampa.Controller.toggle("full_start");
 
             }, 10); // Таймаут 10 мс
